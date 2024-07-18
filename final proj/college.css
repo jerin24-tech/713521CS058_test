@@ -1,0 +1,582 @@
+:root{
+    --pink:#e84393;
+}
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+html{
+font-size: 62.5%;
+scroll-behavior: smooth;
+scroll-padding-top: 6rem;
+overflow-x: hidden;
+}
+section{
+    padding:2rem 9%;
+}
+.heading{
+
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding:1rem;
+    margin:2rem 0;
+    background: rgba(255, 51, 153,.05);
+}
+.heading span{
+    color:var(--pink);
+}
+.btn{
+display: inline-block;
+margin-top: 1rem;
+border-radius: 5rem;
+background:#333;
+color:#fff;
+padding:.9rem 3.5rem;
+cursor: pointer;
+font-size: 1.7rem;
+}
+.btn:hover{
+    color:var(--pink);
+}
+header{
+position: fixed;
+top:0; left:0; right:0;
+background:#fff;
+padding:2rem 9%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+z-index: 1000;
+box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+header .logo{
+font-size: 3rem;
+color:#333;
+font-weight: bolder;
+}
+header .logo span{
+color:var(--pink);
+}
+header .navbar a{
+    font-size: 2rem;
+    padding:0 1.5rem;
+    color: #666;
+}
+header .navbar a:hover{
+color:var(--pink);
+}
+header icons a{
+font-size: 3rem;
+color: #333;
+margin-left: 1.5rem;
+}
+header .icons a:hover{
+color:var(--pink);
+}
+header #toggler{
+    display: none;
+}
+header.fa-bars{
+font-size: 3rem;
+color: #333;
+border-radius: .5rem;
+padding:.5rem 1.5rem;
+cursor: pointer;
+border: .1rem solid rgba(0,0,0,.3);
+display: none;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background:url(college-background.jpeg) no-repeat; 
+    background-size: cover;
+    background-position: center;
+}
+.home.content{
+    max-width: 50rem;
+    }
+    .home.content h3{
+        font-size: 6rem;
+        color:#333;
+    }
+    .home.content span{
+    font-size: 3.5rem;
+    color:var(--pink);
+    padding:1rem 0;
+    line-height: 1.5;
+    }
+    .home.content p{
+        font-size: 1.5rem;
+        color:#999;
+        padding:1rem 0;
+        line-height: 1.5;
+        }
+        .about .row{
+            display: flex;
+            align-items: center;
+            gap:2rem;
+            flex-wrap: wrap;
+            padding:2rem 0;
+            padding-bottom: 3rem;
+        }
+        .about .row .video-container{
+            flex:1 1 40rem;
+            position:relative;
+        }
+        .about .row .video-container video{
+        width:100%;
+        border:1.5rem solid #fff;
+        border-radius: .5rem;
+        box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+        height:100%;
+        object-fit: cover;
+        }
+        .about .row .video-container h3{
+            position:absolute;
+            top:50%; transform: translateY(-50%);
+            font-size: 3rem;
+            background-color: #fff;
+            width:100%;
+            padding:1rem 2rem;
+            text-align: center;
+            mix-blend-mode: screen;
+
+
+        }
+        .about .row .content{
+            flex:1 1 40rem;
+        }
+        .about .row .content h3{
+            font-size:  3rem;
+            color: #333;
+        }
+        .about .row .content p{
+            font-size:  1.5rem;
+            color: #999;
+            padding: .5rem 0 ;
+            padding-top: 1rem;
+            line-height: 1.5;
+
+        }
+        .icons-container{
+        background:#eee;
+        display: flex;
+        flex-wrap: wrap;
+        gap:1.5rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        }
+        .icons-container .icons{
+            background: #fff;
+            border: .1rem solid rgba(0,0,0,.1);
+            padding:2rem;
+            display:flex;
+            align-items:center;
+            flex:1 1 25rem;
+        }
+        .icons-container .icons img{
+            height: 5rem;
+            margin-right: 2rem;
+
+        }
+        .icons-container .icons h3{
+            color: #333;
+            padding-bottom: .5rem;
+            font-size: 1.5rem;
+        }
+            .icons-container .icons h3{
+                color: #555;
+                font-size: 1.3rem;
+            }
+            .courses .box-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap:1.5rem;
+            }
+            .courses .box-container .box{
+            flex:1 1 30rem;
+            box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+            border-radius: .5rem;
+            border: .1rem solid rgba(0,0,0,.1);
+            position:relative;
+            }
+            .courses .box-container .box .discount{
+                position:absolute;
+                top:1rem; left:1rem;
+                padding: .7rem 1rem;
+                font-size: 2rem;
+                color:var(--pink);
+                background: rgba(255, 51, 153,.05);
+                z-index: 1;
+                border-radius: .5rem;
+            }
+            .courses .box-container .box .image{
+        position: relative;
+        text-align: center;
+        padding-top: 2rem;
+        overflow:hidden;
+            }
+            .courses .box-container .box  .image .img{
+                height:25rem;
+                    }
+                    .courses .box-container .box:hover .image .img{
+                        transform:scale(1.1);
+                    }
+                .contact.row{
+                    display:flex;
+                    flex-wrap:wrap;
+                    gap:1.5rem;
+
+                }
+                .contact.row form{
+                    flex:1 1 40rem;
+                    padding:2rem 2.5rem;
+                    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+                }
+                .contact.row .image{
+                flex:1 1 40rem;
+                }
+                .contact.row .image img{
+                width:100%;
+            }
+            /* college.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.contact {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.contact .heading {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact .heading span {
+    color: #ff4757;
+}
+
+.contact .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact form {
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.contact form .box {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact form .box:focus {
+    border-color: #ff4757;
+    outline: none;
+}
+
+.contact form .btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #ff4757;
+    color: #fff;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact form .btn:hover {
+    background-color: #e84118;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.review {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.review .heading {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.review .heading span {
+    color: #ff4757;
+}
+
+.review .box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.review .box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    max-width: 400px;
+    position: relative;
+}
+
+.review .box .stars i {
+    color: #ff4757;
+    margin: 0 2px;
+}
+
+.review .box p {
+    font-size: 1em;
+    color: #666;
+    margin: 10px 0;
+}
+
+.review .box .user {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.review .box .user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.review .box .user-info h3 {
+    font-size: 1.1em;
+    color: #333;
+    margin: 0;
+}
+
+.review .box .user-info span {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.review .box .fas.fa-quote-right {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #ff4757;
+    font-size: 2em;
+    opacity: 0.1;
+}
+/* college.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.courses {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.courses .heading {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.courses .heading span {
+    color: #ff4757;
+}
+
+.courses .box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.courses .box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    max-width: 300px;
+    position: relative;
+}
+
+.courses .box .discount {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff4757;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    border-radius: 3px;
+}
+
+.courses .box .image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.courses .box .image img {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+}
+
+.courses .box .icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.courses .box .image:hover .icons {
+    opacity: 1;
+}
+
+.courses .box .icons a {
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.courses .box .icons .cart-btn {
+    background-color: #ff4757;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.courses .box .icons .cart-btn:hover {
+    background-color: #e84118;
+}
+
+.courses .box .content {
+    margin-top: 20px;
+}
+
+.courses .box .content h3 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.courses .box .content .price {
+    font-size: 1em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.courses .box .content .price span {
+    color: #999;
+    text-decoration: line-through;
+}
+
+
+
+            @media(max-width:991px) {
+                html{
+                    font-size: 55%;
+                    }
+                header{
+                    padding:2rem;
+                }
+                section{
+                    padding:2rem;
+                }
+                .home{
+                    background-position: left;
+                }
+            }
+            @media(max-width:768px){
+                header .fa-bars{
+                    display: block;
+                }
+                header .navbar{
+                    position:absolute;
+                    top:100%; left:0; right:0;
+                    background:#eee;
+                    border-top: .1rem solid rgba(0,0,0,.1);
+                    clip-path: polygon(0 0,100% 0, 100% 0, 0 0);
+                }
+                header #toggler:checked ~ .navbar{
+                    clip-path:polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            
+                }
+                header .navbar a{
+                    margin:1.5rem;
+                    padding:1.5rem;
+                    background:#fff;
+                    border:.1rem solid rgba(0,0,0,.1);
+                    display:block;
+            
+                }
+                .home .content h3{
+                    font-size: 5rem;
+                }
+                .home .content span{
+                font-size: 2.5rem;
+                }
+                .icons-container .icons h3{
+                    font-size: 2rem;
+                }
+                    .icons-container .icons h3{
+                        font-size: 1.7rem;
+                    }
+            }
+            @media(max-width:450px) {
+                html{
+                    font-size: 50%;
+                    }
+                .heading{
+                    font-size: 3rem;
+                }
+            }
+
+
